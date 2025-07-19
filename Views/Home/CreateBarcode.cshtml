@@ -1,0 +1,39 @@
+﻿@model BarCodeMVC.Models.GenerateBarcodeModel
+
+@{
+    ViewData["Title"] = "CreateBarcode";
+}
+
+<h1>CreateBarcode</h1>
+
+<h4>GenerateBarcodeModel</h4>
+<hr />
+<div class="row">
+    <div class="col-md-4">
+        <form asp-action="CreateBarcode">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            <div class="form-group">
+                <label asp-for="BarcodeText" class="control-label"></label>
+                <input asp-for="BarcodeText" class="form-control" />
+                <span asp-validation-for="BarcodeText" class="text-danger"></span>
+            </div>
+            <div class="form-group mt-4">
+                <input type="submit" value="Create" class="btn btn-primary" />
+            </div>
+        </form>
+    </div>
+</div>
+
+<div>
+    @if (ViewBag.QrCodeUri != null)
+    {
+        <div>
+            <h3>Generated Barcode:</h3>
+            <img src="@ViewBag.QrCodeUri" alt="Generated Barcode" />
+        </div>
+    }
+</div>
+
+@section Scripts {
+    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+}
