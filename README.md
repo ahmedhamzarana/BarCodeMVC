@@ -109,4 +109,4 @@ Pull requests are welcome! For major changes, please open an issue first to disc
 
 ## 📬 Contact
 
-Created by [Your Name] - feel free to reach out!
+Created by Ahned Hamza Rana - feel free to reach out!
