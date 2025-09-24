@@ -86,13 +86,6 @@ BarCodeMVC/
 ├── appsettings.json
 └── BarCodeMVC.csproj
 ```
-
----
-
-## 📄 License
-
-This project is licensed under the MIT License.
-
 ---
 
 ## 🤝 Contributing
